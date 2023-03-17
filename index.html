@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the Button</title>
+</head>
+<style>
+    .button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px;
+	background-color: red;
+	border: none;
+}
+
+.green {
+	background-color: green;
+}
+body {
+    background-image: url(https://th.bing.com/th/id/OIP.44ssAgFngAqT3O7-PGWe9gHaEd?w=290&h=180&c=7&r=0&o=5&pid=1.7); /* calea catre imaginea de fundal */
+    background-size: cover; /* ajusteaza dimensiunea imaginii la dimensiunea ecranului */
+}
+</style>
+<body>
+	<div class="container">
+		<h1>Enter number of buttons:</h1>
+		<input type="number" id="inputNumber">
+		<button onclick="generateButtons()">Display the buttons</button>
+		<div id="buttons"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
